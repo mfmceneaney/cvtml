@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PROJECT_DIR=/path/to/this/project
+export PROJECT_DIR=/path/to/cvtml/deploy/java
 export VENV_PACKAGES=/path/to/venv/lib/python3/site-packages
 
 cd $PROJECT_DIR
@@ -48,11 +48,5 @@ make
 mkdir install
 cmake --install . --prefix $PWD/install/
 popd
-
-# Compile main project
-mkdir build
-cd build
-cmake -DCMAKE_PREFIX_PATH="$PROJECT_DIR/libtorch;$PROJECT_DIR/pytorch_scatter/build/install;$PROJECT_DIR/pytorch_sparse/build/install" ../
-cmake --build . --config Release
 
 echo DONE
