@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export PROJECT_DIR=/work/clas12/users/mfmce/cmake_torch_test_2_13_23
-export VENV_PACKAGES=/work/clas12/users/mfmce/venv_ifarm/lib/python3.9/site-packages
+export PROJECT_DIR=/work/clas12/users/$USER/cvtml/
+export VENV_PACKAGES=/work/clas12/users/$USER/venv_ifarm/lib/python3.9/site-packages
 
 cd $PROJECT_DIR
 
