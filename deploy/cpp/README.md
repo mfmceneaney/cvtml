@@ -8,11 +8,14 @@ The [PyTorch C++ Api](https://pytorch.org/cppdocs/) has its own documentation to
 
 The basic directions for installing the PyTorch C++ libraries are available on the PyTorch Documentation: [Installing C++ Distributions of PyTorch](https://pytorch.org/cppdocs/installing.html).
 
-You may need additional PyTorch libraries, particularly if you are using [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).
+You may need additional PyTorch libraries, particularly if you are using [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).  Most C++ versions of PyTorch Geometric libraries are available on [Matthias Fey's Github](https://github.com/rusty1s).
 
-Most C++ versions of PyTorch Geometric libraries are available on [Matthias Fey's Github](https://github.com/rusty1s).
-
-An example setup script for external libraries is provided in [bin/setup.sh](bin/setup.sh).
+An example setup script for the PyTorch Geometri libraries is provided in [bin/setup.sh](bin/setup.sh).  You will need to set 
+```bash
+PROJECT_DIR=/path/to/this/project
+VENV_PACKAGES=/path/to/venv/lib/python3/site-packages
+```
+in this script.
 
 #
 

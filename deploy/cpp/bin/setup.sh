@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export PROJECT_DIR=/work/clas12/users/$USER/cvtml/deploy/cpp
-export VENV_PACKAGES=/work/clas12/users/$USER/venv_ifarm/lib/python3.9/site-packages
+export PROJECT_DIR=/path/to/this/project
+export VENV_PACKAGES=/path/to/venv/lib/python3/site-packages
 
 cd $PROJECT_DIR
 
