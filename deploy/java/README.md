@@ -21,7 +21,7 @@ to the appropriate directories in this script.
 
 ## Getting Started
 
-If you have correctly formatted the [bin/install_cpp_dependencies.sh](bin/install_cpp_dependencies.sh) install the C++ dependencies by running
+If you have correctly formatted the [bin/install_cpp_dependencies.sh](bin/install_cpp_dependencies.sh), install the C++ dependencies by running
 ```bash
 source bin/setup.sh
 ```
@@ -32,9 +32,9 @@ pushd /path/to/cvtml/deploy/java/ >> /dev/null
 source bin/env.sh
 popd >> /dev/null
 ```
-*NOTE* You need to modify the paths in [bin/env.sh](bin/env.sh) if you installed the C++ dependencies somewhere other than this directory.
+**NOTE** You need to modify the paths in [bin/env.sh](bin/env.sh) if you installed the C++ dependencies somewhere other than this directory.
 
-If your environment is correctly set the `$TORCH_JAVA_OPTS` variable should now have the JVM option for linking all the PyTorch shared libraries you just installed and the `$DEPLOY_JAVA_HOME` variable should point to this directory.
+If your environment is correctly set the `$TORCH_JAVA_OPTS` variable should now have the JVM option for linking all the PyTorch shared libraries you just installed, and the `$DEPLOY_JAVA_HOME` variable should point to this directory.
 
 Now you can build and run the project
 ```bash
@@ -46,7 +46,7 @@ There should be an example script [bin/run.sh](bin/run.sh) for running the proje
 ```bash
 $DEPLOY_JAVA_HOME/bin/run.sh
 ```
-*NOTE* If you modify this project and write files with it, this script may not correctly set the default current working directory for writing files.  As a result files may be written to the project directory.
+**NOTE** If you modify this project and write files with it, this script may not correctly set the default current working directory for writing files.  As a result files may be written to the project directory.
 
 #
 
