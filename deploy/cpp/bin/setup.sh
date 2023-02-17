@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PROJECT_DIR=/work/clas12/users/$USER/cvtml/
+export PROJECT_DIR=/work/clas12/users/$USER/cvtml/deploy/cpp
 export VENV_PACKAGES=/work/clas12/users/$USER/venv_ifarm/lib/python3.9/site-packages
 
 cd $PROJECT_DIR
