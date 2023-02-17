@@ -10,12 +10,27 @@ The basic directions for installing the PyTorch C++ libraries are available on t
 
 You may need additional PyTorch libraries, particularly if you are using [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).  Most C++ versions of PyTorch Geometric libraries are available on [Matthias Fey's Github](https://github.com/rusty1s).
 
-An example setup script for the PyTorch Geometri libraries is provided in [bin/setup.sh](bin/setup.sh).  You will need to set 
+An example setup script for the PyTorch and PyTorch Geometric libraries is provided in [bin/setup.sh](bin/setup.sh).  You will need to set 
 ```bash
-PROJECT_DIR=/path/to/this/project
+PROJECT_DIR=/path/to/cvtml/deploy/cpp
 VENV_PACKAGES=/path/to/venv/lib/python3/site-packages
 ```
-in this script.
+to the appropriate directories in this script.
+
+## Getting Started
+
+The setup script will also build the main project, but in case you already have the dependencies installed in some directory `$PROJECT_DIR` you can simply run the following here
+```bash
+mkdir build
+cd build
+cmake -DCMAKE_PREFIX_PATH="$PROJECT_DIR/libtorch;$PROJECT_DIR/pytorch_scatter/build/install;$PROJECT_DIR/pytorch_sparse/build/install" ../
+cmake --build . --config Release
+```
+
+Now you should be able to execute the project by running
+```bash
+./build/example-app
+```
 
 #
 

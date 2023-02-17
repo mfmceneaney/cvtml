@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PROJECT_DIR=/path/to/this/project
+export PROJECT_DIR=/path/to/cvtml/deploy/cpp
 export VENV_PACKAGES=/path/to/venv/lib/python3/site-packages
 
 cd $PROJECT_DIR
