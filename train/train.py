@@ -1,6 +1,5 @@
 #----------------------------------------------------------------------#
-# Author: M. McEneaney
-# Institution: Duke University
+# Author: M. McEneaney, Duke University
 # Date: Feb. 2023
 #----------------------------------------------------------------------#
 
