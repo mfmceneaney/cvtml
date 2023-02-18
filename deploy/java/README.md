@@ -23,7 +23,7 @@ to the appropriate directories in this script.
 
 If you have correctly formatted the [bin/install_cpp_dependencies.sh](bin/install_cpp_dependencies.sh) and you have installed the PyTorch C++ library into this directory, install the PyTorch Geometric dependencies by running
 ```bash
-source bin/setup.sh
+bin/setup.sh
 ```
 
 Once you have installed the C++ dependencies, add the following to your startup script
