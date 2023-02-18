@@ -18,7 +18,7 @@ popd
 
 # Install PyTorch Scatter
 git clone https://github.com/rusty1s/pytorch_scatter.git
-pushd pytorch_sparse
+pushd pytorch_scatter
 mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=$PROJECT_DIR/libtorch ..
@@ -29,7 +29,7 @@ popd
 
 # Install PyTorch Cluster
 git clone https://github.com/rusty1s/pytorch_cluster.git
-pushd pytorch_sparse
+pushd pytorch_cluster
 mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=$PROJECT_DIR/libtorch ..
@@ -40,7 +40,7 @@ popd
 
 # Install PyTorch Spline Conv
 git clone https://github.com/rusty1s/pytorch_spline_conv.git
-pushd pytorch_sparse
+pushd pytorch_spline_conv
 mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=$PROJECT_DIR/libtorch ..
