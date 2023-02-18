@@ -5,5 +5,7 @@ echo "DEPLOY_JAVA_HOME=$PWD" | grep DEPLOY_JAVA_HOME --color=auto
 
 ./bin/install_cpp_dependencies.sh
 
+source bin/env.sh
+
 # Build groovy library
 ./gradlew build
